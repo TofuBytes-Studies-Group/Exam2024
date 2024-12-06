@@ -19,15 +19,15 @@ This repository is the central hub for all microservices, models, and documentat
 
 1. [Overview](#overview)
 2. [System Architecture](#system-architecture)
+   - [Sequence Diagram](#sequence-diagram)
    - [Monolith](#monolith)
    - [Microservices](#microservices)
-     - [Service Directory](#service-directory)
-3. [GitHub Projects](#github-projects)
-4. [Documentation](#documentation)
+4. [GitHub Projects](#github-projects)
+5. [Documentation](#documentation)
    - [System Integration](#system-integration)
    - [Development of Large Systems](#development-of-large-systems)
    - [Software Quality](#software-quality)
-5. [Models](#models)
+6. [Models](#models)
 
 ---
 
@@ -45,6 +45,8 @@ The current version of our product is a software system, which focuses primarily
 ## System Architecture
 ![MTOGO_eksamensprojekt-architecture_diagram](https://github.com/user-attachments/assets/c377e1a0-b371-4506-a2d5-7fc0e8fcd82b)
 
+### Sequence Diagram
+![MTOGO_eksamensprojekt-Sequence_diagram](https://github.com/user-attachments/assets/2d6b8adf-3bc5-40bd-8f3f-d81e0a1f3b8f)
 
 ## Monolith
 This is the directory for [Accounts](https://github.com/TofuBytes-Studies-Group/Accounts), which represents our legacy system, built as a monolith using hexagonal architecture. It handles customer account registration, login, and authentication. 
@@ -53,9 +55,6 @@ This is the directory for [Accounts](https://github.com/TofuBytes-Studies-Group/
 
 We have create a template for our microservices, so they could be made with domain-driven design in mind. The repository is [this](https://github.com/TofuBytes-Studies-Group/MTOGO_template).
 
-### Service Directory
-
-Below is the directory of microservices in the MTOGO system:
 
 | Service Name   | Description                                                                      | Repository Link                                                         |
 |----------------|----------------------------------------------------------------------------------|-------------------------------------------------------------------------|

@@ -2,7 +2,6 @@
 
 This repository is the central hub for all microservices, models, and documentation related to the MTOGO system for our Software Development Exams 2024. 
 
----
 
 ## Group F
 
@@ -41,9 +40,10 @@ The aim of this project was to design and develop a modern integrated software s
 
 The current version of our product is a software system, which focuses primarily on creating value for the customer of MTOGO. Therefore, we chose to prioritize what we have called the *golden path* for our system, which is how the customer interacts with it. This includes registration, login, ordering, receiving order status updates, and creating reviews. 
 
----
+
 
 ## System Architecture
+![MTOGO_eksamensprojekt-architecture_diagram](https://github.com/user-attachments/assets/c377e1a0-b371-4506-a2d5-7fc0e8fcd82b)
 
 
 ## Monolith
@@ -66,13 +66,13 @@ Below is the directory of microservices in the MTOGO system:
 | Review         | Manages customer reviews of restaurants and delivery agents                    | [Review Repo](https://github.com/TofuBytes-Studies-Group/Review)        |
 | Dashboard  | The management's dashboard for checking open orders, still in progress | [Dashboard Repo](https://github.com/TofuBytes-Studies-Group/MTOGODashboard) |
 
----
+
 
 ## Github Projects
 
 To stay organized and to track our progress we used Github Projects. Our board can be found [here](https://github.com/orgs/TofuBytes-Studies-Group/projects/1). 
 
----
+
 
 ## Documentation
 

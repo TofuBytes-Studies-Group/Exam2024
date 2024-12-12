@@ -88,7 +88,6 @@ Testing will follow an iterative cycle aligned with the development timeline, en
 
 ## 9. Deliverables
 - **Test Strategy**: The high-level test strategy (this document).
-- **Test Plan**: A comprehensive plan covering detailed test cases, schedules, and resources.
 - **Test Cases**: The documented test cases.
 - **Test Coverage Report**: A report of the percentage of features and code covered by the tests.
 

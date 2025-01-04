@@ -1,226 +1,175 @@
 # DLS DOCUMENTATION
 
-
+---
 ## User Stories
 
 ### Customer Create Account
-**As a** customer,  
-**I want** to create a customer account,  
-**so that** I can login.
+As a customer, I want to create a customer account, so that I can login.
 
 #### Acceptance Criteria:
-- **Username**  
-  - Must be unique.  
-  - Allowed characters: letters, numbers.  
-  - Minimum length: 3 characters.  
-  - Maximum length: 12 characters.  
+- The username must be unique  
+  - Allowed characters: letters, numbers  
+  - Must have a minimum length of 3 characters, maximum 12  
 
-- **Password**  
-  - Must include:
-    - 1 or more uppercase letters.
-    - 1 or more lowercase letters.
-    - 1 or more numbers.
-    - 1 or more symbols.  
-  - Minimum length: 8 characters.  
-  - Maximum length: 64 characters.  
+- The password should follow these specific password rules:  
+  - Has to include 1 or more uppercase, 1 or more lowercase, 1 or more number, and 1 or more symbol.  
+  - Must have a minimum length of 8 characters, maximum 64.  
 
-- **Email**  
-  - Must be a valid email address.  
-  - Must include a prefix, domain, and a `@`.  
-  - **Prefix**:
-    - Allowed characters: letters (a-z), numbers, underscores, periods, and dashes.
-    - Underscore, period, or dash must be followed by one or more letters or numbers.  
-  - **Domain**:
+- The e-mail has to be a valid email address  
+  - Has to include a prefix, domain, and a `@`  
+  - **Prefix (Before `@`)**  
+    - Allowed characters: letters (a-z), numbers, underscores, periods, and dashes.  
+    - An underscore, period, or dash must be followed by one or more letters or numbers.  
+  - **Domain (After `@`)**  
     - Allowed characters: letters, numbers, dashes.  
-    - Last portion of the domain must have at least two characters (e.g., `.com`, `.org`).  
+    - The last portion of the domain must be at least two characters, for example: `.com`, `.org`, `.cc`, `.dk`  
+      - (Valid domains: [https://www.iana.org/domains/root/db](https://www.iana.org/domains/root/db))  
 
-- **Phone Number**  
-  - Must be in the Danish format:  
-    - With `+45`: `+45 11 11 11 11`.  
-    - Without `+45`: `11 11 11 11`.  
+- The phone number must be the Danish format:  
+  - `+45` followed by 8 numbers (e.g.: `+45 11 11 11 11`), or without the `+45` (e.g.: `11 11 11 11`).  
 
-- **Address**  
-  - Must be a Danish address:
-    - Format: `Street name street number, postal code (4 numbers) city name`.  
-    - Example: `Byhaven 1, 2750 Ballerup`.  
+- The address must be a Danish address:  
+  - Street name street number, postal code (4 numbers), city name (e.g.: `Byhaven 1, 2750 Ballerup`).  
 
 ---
 
 ### Delivery Agent Create Account
-**As a** delivery agent,  
-**I want** to create a delivery agent account,  
-**so that** I can login to the MTOGO app.
+As a delivery agent, I want to create a delivery agent account, so that I can login to the MTOGO app.
 
 ---
 
 ### Restaurant Create Account
-**As a** restaurant,  
-**I want** to create a restaurant account,  
-**so that** I can login to the MTOGO app.
+As a restaurant, I want to create a restaurant account, so that I can login to the MTOGO app.
 
 ---
 
 ### Admin Create Account
-**As an** admin,  
-**I want** to create an admin account,  
-**so that** I can login to the MTOGO app and see the management dashboard.
+As an admin, I want to create an admin account, so that I can login to the MTOGO app and see the management dashboard.
 
 ---
 
 ### Customer Search for Restaurant
-**As a** customer,  
-**I want** to be able to search for a restaurant,  
-**so that** I can see restaurants listed.
+As a customer, I want to be able to search for a restaurant, so that I can see restaurants listed.
 
 #### Acceptance Criteria:
-- Results should match the search term (exact or approximate).  
-- Results should only include restaurants within a 0–5 km radius.  
-- Search results should use pagination (up to 20 restaurants per page).  
-- Results should display:
-  - Restaurant name.  
-  - Address/postal code.  
-  - Distance in kilometers.  
-- Support keyword/tag searches (e.g., "Pizza", "Burger").  
+- The search result should return results that are identical or almost identical to the search  
+- The search result should only show restaurants within 0 - 5 km radius of the customer  
+- The search should use pagination and each page should return up to 20 restaurants  
+- The list should show the restaurant's name and the address/postal code, how far away in km  
+- Should the customer be able to search for keywords/tags, such as “Pizza”, “Burger” etc.?  
 
 ---
 
 ### Customer Selects Restaurant
-**As a** customer,  
-**I want** to select a restaurant,  
-**so that** I can see the given restaurant’s menu.
+As a customer, I want to be able to select a restaurant, so that I can see the given restaurant’s menu.
 
 #### Acceptance Criteria:
-- Restaurant name should appear at the top.  
-- Menu should be displayed below the restaurant's name.
+- The restaurant's name should be displayed at the top  
+- Selecting a restaurant should showcase the restaurant’s menu below its name  
 
 ---
 
 ### Customer Selects Food
-**As a** customer,  
-**I want** to select food items,  
-**so that** I can add them to a cart.
+As a customer, I want to be able to select the food items I want, so that I can add them to a cart.
 
 #### Acceptance Criteria:
-- Food items should have prices displayed.
+- The food items should have the price next to them  
 
 ---
 
 ### Customer Orders Food
-**As a** customer,  
-**I want** to order the items in my cart,  
-**so that** the restaurant can prepare my food.
+As a customer, I want to be able to order the items in my cart, so that the restaurant can prepare my food.
 
 #### Acceptance Criteria:
-- Show the accumulated price of the order.  
-- Allow customers to annul their order before paying.
+- The customer should be able to see the accumulated price of their order  
+- The customer should be able to annul their order, before paying  
 
 ---
 
-### Restaurant Accepts Incoming Order
-**As a** restaurant,  
-**I want** to accept an incoming order,  
-**so that** we can sell some food.
+### Restaurant Accept Incoming Order
+As a restaurant, I want to be able to accept an incoming order, so that we can sell some food.
 
 #### Acceptance Criteria:
-- Display incoming orders clearly.  
-- Allow restaurants to accept orders via the display.
+- The restaurant should have a clear display over orders coming in  
+- The restaurant should be able to accept an order via the display  
 
 ---
 
 ### Restaurant Rejects Incoming Order
-**As a** restaurant,  
-**I want** to reject an incoming order,  
-**so that** we don't get too many orders at once.
+As a restaurant, I want to be able to reject an incoming order, so that we don't get too many orders at once.
 
 ---
 
 ### Customer Pays for Food
-**As a** customer,  
-**I want** to pay for my food,  
-**so that** I will receive my order.
+As a customer, I want to be able to pay for my food, so that I will receive my order.
 
 #### Acceptance Criteria:
-- Allow customers to choose a payment method.  
-- Redirect customers to a secure external payment page.  
-- Send order confirmation email with details.
+- The customer should be able to choose a way of payment  
+- The customer should be redirected to a secure payment page of their choice (externally)  
+- The customer should receive an order confirmation on their email with the order details  
 
 ---
 
 ### Delivery Agent Information
-**As a** delivery agent,  
-**I want** to see available orders,  
-**so that** I can pick them up.
+As a delivery agent, I want to see available orders, so that I can pick it up.
 
 #### Acceptance Criteria:
-- Display all available orders.  
-- Allow delivery agents to accept orders via the display.
+- The delivery agent should be able to see all orders available in a display  
+- The delivery agent should be able to accept an order via the display  
 
 ---
 
 ### Delivery Agent Picks Up Order
-**As a** delivery agent,  
-**I want** to pick up an order from a restaurant,  
-**so that** I can deliver it to the customer.
+As a delivery agent, I want to pick up an order from a restaurant, so that I can deliver it to the customer.
 
 #### Acceptance Criteria:
-- Delivery agents should confirm the pickup via the display to notify the customer.
+- The delivery agent should be able to confirm the order has been picked up on the display to notify the customer  
 
 ---
 
 ### Customer Receives Order Process Updates
-**As a** customer,  
-**I want** to receive order process updates,  
-**so that** I can track the status of my order.
+As a customer, I want to receive order process updates, so that I can track the status of my order.
 
 #### Acceptance Criteria:
-- Display live updates of the order status.
+- The customer should be able to see their order status at all times  
+- The customer's order status should update live (every time there is a change?)  
 
 ---
 
-### Customer Creates Review
-**As a** customer,  
-**I want** to create a review,  
-**so that** I can rate my experience.
+### Customer Create Review
+As a customer, I want to create a review, so that I can rate my experience.
 
 #### Acceptance Criteria:
-- Allow reviews through the app.  
-- Reviews include:
-  - Star rating (0–5).  
-  - Comment (0–280 characters).  
-- Two types of reviews:
-  - Agent review when the order is received.  
-  - Restaurant review (including food) when the order is received.  
+- The customer should be able to create a review via the app.  
+- A review of the agent and restaurant is a star-rating from 0-5 and a comment of 0-280 characters.  
+- There are 2 different reviews:  
+  - The customer should be able to review the agent when the order is received.  
+  - The customer should be able to review the restaurant and their food when the order is received.  
 
 ---
 
 ### Customer Login
-**As a** customer,  
-**I want** to login to my account,  
-**so that** I can use the MTOGO app.
+As a customer, I want to be able to login to my account, so that I can use the MTOGO app.
 
 #### Acceptance Criteria:
-- Handle incorrect username/password alerts.  
-- Issue an authentication token upon successful login.
+- When logging in, it should handle if the password and/or username is wrong. If one of them is wrong, the user is alerted.  
+- When the customer is successfully logged in, they should have an authentication token  
 
 ---
 
-### Customer See Ratings of Restaurants
-**As a** customer,  
-**I want** to see restaurant ratings,  
-**so that** I can select the best restaurant for me.
+### Customer See Rating of Restaurants
+As a customer, I want to be able to see the restaurant's ratings, so that I can select the best restaurant for me.
 
 #### Acceptance Criteria:
-- Display restaurant ratings below their names.
+- The customer can see the restaurant's ratings below the restaurant's name  
 
 ---
 
 ### Customer Cart
-**As a** customer,  
-**I want** to see my cart,  
-**so that** I can view or edit it.
+As a customer, I want to be able to see my cart, so that I can view or edit my cart.
 
 #### Acceptance Criteria:
-- Cart and price should update when food is added.  
-- Show combined price.  
-- Allow viewing and editing of the cart.  
-- Combine identical food items into one entry.
+- The cart and price should have been updated when a customer adds food, and the combined price should be shown to the customer  
+- The customer should be able to view and edit their cart  
+- Identical food items should be shown with a combined amount  
+

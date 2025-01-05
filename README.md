@@ -63,7 +63,6 @@ We have create a template for our microservices, so they could be made with doma
 | Ordering       | Transforms cart data into an order and sends it to the external Payment system           | [Ordering Repo](https://github.com/TofuBytes-Studies-Group/Ordering)    |
 | Order Status   | Listens to Kafka for order status updates that can be accessed via an endpoint             | [Order Status Repo](https://github.com/TofuBytes-Studies-Group/Order_status) |
 | Review         | Manages customer reviews of restaurants and delivery agents                    | [Review Repo](https://github.com/TofuBytes-Studies-Group/Review)        |
-| Dashboard  | The management's dashboard for checking open orders, still in progress | [Dashboard Repo](https://github.com/TofuBytes-Studies-Group/MTOGODashboard) |
 
 
 

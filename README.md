@@ -84,7 +84,7 @@ For Development of Large Systems exam, see [this folder](https://github.com/Tofu
 
 ### Software Quality
 
-For Development of Software Quality exam, see [this folder](https://github.com/TofuBytes-Studies-Group/Exam2024/tree/main/Documentation/System%20Quality).
+For Software Quality exam, see [this folder](https://github.com/TofuBytes-Studies-Group/Exam2024/tree/main/Documentation/System%20Quality).
 
 ### Models
 

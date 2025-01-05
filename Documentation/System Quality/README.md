@@ -1,4 +1,4 @@
-# SYSTEM QUALITY DOCUMENTATION
+# SOFTWARE QUALITY DOCUMENTATION
 
 ## Test results and coverage
 Here we have added some screenshots from our test-runner workflow and various extra screenshots relevant to the test results, coverage, and reports for each microservice and the Accounts legacy system.
@@ -6,6 +6,10 @@ Here we have added some screenshots from our test-runner workflow and various ex
 
 ### Accounts
 
+![471791008_543425085318960_5419607063710549659_n](https://github.com/user-attachments/assets/44ec0cf7-6a84-4b07-a4fa-25dae6cb8f9d)
+
+
+![462558275_602931385623213_6324719775215746647_n](https://github.com/user-attachments/assets/6e3af65f-2bad-4869-9f52-e83181ba0ef4)
 
 #### Before refactoring:
 

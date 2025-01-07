@@ -173,3 +173,22 @@ As a customer, I want to be able to see my cart, so that I can view or edit my c
 - The customer should be able to view and edit their cart  
 - Identical food items should be shown with a combined amount  
 
+---
+
+## Deployment
+
+Run this to setup Docker Swarm:
+
+```docker swarm init```
+
+Run this to set up the Swarm using Docker Stack:
+
+```docker stack deploy -c docker-stack.yml mtogo```
+
+Run this to see the services:
+
+```docker stack services mtogo```
+
+Or this to remove:
+
+```docker stack rm mtogo```
